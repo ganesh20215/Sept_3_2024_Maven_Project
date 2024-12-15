@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="testng.failscriptsexecution.Transform"/>
+    </listeners>
+    <test verbose="2" parallel="false" thread-count="3" preserve-order="true" name="D:/repo1/clone/TestFolder/Demo/Sept_3_2024_Maven_Project">
+        <classes>
+            <class name="testng.basicoftestng.BeforeMethodExample"/>
+            <class name="testng.basicoftestng.DependsOnGroupsExample"/>
+        </classes>
+    </test>
+</suite>

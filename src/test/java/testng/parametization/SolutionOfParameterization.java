@@ -34,11 +34,9 @@ public class SolutionOfParameterization {
     public void verifyCourseSearch(String courseName, String cityName) throws InterruptedException {
         driver.get("https://www.google.com/");
         driver.manage().window().maximize();
-
         WebElement searchTextBox = driver.findElement(By.name("q"));
         searchTextBox.sendKeys(courseName +" "+ cityName);
         searchTextBox.sendKeys(Keys.ENTER);
-
         Thread.sleep(3000);
 
         driver.close();
